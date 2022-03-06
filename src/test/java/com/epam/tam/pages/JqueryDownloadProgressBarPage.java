@@ -17,8 +17,7 @@ public class JqueryDownloadProgressBarPage extends BasePageObject {
     public void clickOnStartDownloadButton() { startDownloadButton.click(); }
 
     public boolean isMessageDisplayed(String msg) {
-        Waiters waiters = new Waiters(Hooks.getDriver(),10);
+        Waiters waiters = new Waiters(Hooks.getDriver(),20);
         return  waiters.waitingForTextToBePresent(By.cssSelector("#dialog"), msg);
     }
 }
-
