@@ -17,6 +17,7 @@ public class Hooks {
 
     @Before
     public void setup() {
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
